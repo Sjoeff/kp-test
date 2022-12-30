@@ -1,0 +1,464 @@
+/*
+    Kuypers Parket en Traprenovatie
+    website (c) svd
+
+    ! style.css
+*/
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: var(--c5);
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 67%;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  text-align: left;
+}
+
+::placeholder {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 1vw, 1rem);
+}
+
+form label {
+  padding-top: 1em;
+}
+
+form input {
+  padding: 0.5em;
+}
+
+textarea {
+  padding-top: 0.25em;
+  padding-left: 0.25em;
+}
+
+form button {
+  margin-top: 1em;
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  padding: 0.5em;
+  background: var(--c8);
+  color: var(--c3);
+  font-weight: 600;
+  text-transform: lowercase;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.8s ease;
+}
+
+form button:hover {
+  background: var(--c2);
+}
+
+form button:active {
+  border: 3px inset white;
+}
+
+header {
+  width: 100%;
+  height: 33vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+}
+
+.header--logo {
+  background-image: url("/kp_0.2/assets/images/kp_logo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  height: 12em;
+  align-items: center;
+  justify-content: space-evenly;
+  column-gap: 1em;
+  background: var(--black);
+}
+
+footer img {
+  width: 64px;
+}
+
+footer ul {
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.75em;
+}
+
+footer li {
+  font-family: var(--font-1);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  list-style-type: none;
+  color: var(--c5);
+}
+
+path,
+svg {
+  fill: var(--c5);
+  width: 75px;
+  height: 75px;
+}
+
+/*
+    ! custom classes
+*/
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 50vh;
+  position: relative;
+  isolation: isolate;
+  background-image: url("/kp_0.2/assets/images/test.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+/* ? bg - set opacity */
+.landing::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: #fff;
+  opacity: 0.1;
+}
+
+.landing h1 {
+  font-family: var(--font-7);
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  color: var(--c2);
+  letter-spacing: 6px;
+  font-weight: 500;
+}
+
+.landing p {
+  font-family: var(--font-7);
+  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  text-shadow: 2px 2px 4px rgba(237, 208, 178, 0.076);
+  color: var(--c2);
+  line-height: 1.5;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  padding: 0 1em;
+}
+
+.landing span {
+  color: var(--c1);
+}
+
+.landing button {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.75rem);
+  padding: 0.5em;
+  background: var(--c8);
+  color: var(--c3);
+  font-weight: 600;
+  text-transform: lowercase;
+  border-radius: 5px;
+  border: 2px solid black;
+  transition: all 0.8s ease;
+}
+
+.landing button:hover {
+  background: var(--c2);
+}
+
+.landing button:active {
+  border: 3px inset white;
+}
+
+.section-2 {
+  display: flex;
+  height: 67vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2em;
+  background: var(--c8);
+}
+/*
+.section-2:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border: 2px solid black;
+  height: 30em;
+  width: 80%;
+  bottom: 50px;
+  opacity: 0.25;
+}
+*/
+.section-2 h2 {
+  font-family: var(--font-7);
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 1px;
+  color: var(--black);
+  text-decoration: underline;
+  text-align: left;
+  width: 50%;
+}
+
+.section-2 p {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  color: var(--grey-25);
+  max-width: 50%;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+}
+
+.section-3 {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  background: var(--c7);
+  padding: 2em;
+  padding-bottom: 3em;
+}
+
+.section3-txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 100%;
+  height: 40vh;
+}
+
+.section-3 h2 {
+  text-align: center;
+  font-family: var(--font-7);
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 1px;
+  color: var(--black);
+  text-decoration: underline;
+  text-align: left;
+  width: 50%;
+}
+
+.section3-txt-wrapper p {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 50%;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  color: var(--grey-25);
+}
+
+.gal-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3em;
+  justify-content: center;
+}
+
+.gal-wrapper p {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 1vw, 1.5rem);
+  max-width: 75%;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  color: var(--grey-12);
+}
+
+.imgs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  height: 100%;
+  gap: 3em;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 3em 0;
+  border-radius: 15px;
+}
+
+.imgs-title {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.imgs-title h4 {
+  background: rgba(1, 1, 1, 0.2);
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: 25vw;
+  padding: 1em;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--c3);
+}
+
+.imgs-text-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.imgs-text-wrapper h4 {
+  display: block;
+  background: rgba(1, 1, 1, 0.2);
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 5px;
+}
+
+.imgs-text-wrapper p {
+  background: rgba(1, 1, 1, 0.2);
+  padding: 1em;
+  margin: 1.5em;
+  border-radius: 5px;
+}
+
+.section-3 img {
+  display: block;
+  height: auto;
+  max-width: clamp(20em, 50vw, 33em);
+  border-radius: 7px;
+}
+
+.section-4 {
+  background-image: url("/kp_0.2/assets/images/bg/bg-2.jpg");
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-size: cover;
+  align-items: center;
+  display: flex;
+  height: 25em;
+}
+
+.section-4 h2 {
+  text-align: center;
+  font-family: var(--font-7);
+  font-size: clamp(2rem, 3vw, 3rem);
+  letter-spacing: 1px;
+  color: var(--c5);
+  font-weight: 500;
+  background: rgba(1, 1, 1, 0.3);
+  padding: 0.5em;
+  border-radius: 5px;
+}
+
+.section-4 ol {
+  background: rgba(1, 1, 1, 0.3);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.section-4 li {
+  font-family: var(--font-7);
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  font-weight: 600;
+  max-width: 67%;
+  line-height: 1.4;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  list-style-type: none;
+  color: var(--c5);
+}
+
+.section-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  background: var(--c8);
+  height: 75vh;
+}
+
+.section-5 p {
+  font-family: var(--font-7);
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+  max-width: 50%;
+  line-height: 1.4;
+  letter-spacing: 0.2px;
+  word-spacing: 2px;
+  list-style-type: circle;
+  color: var(--grey-12);
+}
+
+.section-5 strong {
+  text-align: center;
+  font-family: var(--font-7);
+  letter-spacing: 1px;
+  color: var(--black);
+  text-decoration: underline;
+  font-weight: 800;
+  font-size: clamp(1.6rem, 2vw, 2rem);
+  letter-spacing: 1px;
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: var(--c1);
+}
+
+i {
+  color: var(--c2);
+}
+
+.onderlijn:after {
+  content: "";
+  display: block;
+  border: 3px solid var(--black);
+  width: 50%;
+  margin-top: 1em;
+}
+
+.img-caption {
+  position: relative;
+}
+
+.wp-caption-text {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  margin-left: 1em;
+  margin-bottom: 1em;
+  font-family: var(--font-7);
+  font-size: clamp(1.2rem, 2vw, 1.8rem);
+  text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.75),
+    -2px -2px 0 rgba(255, 255, 255, 0.75);
+  color: rgba(1, 1, 1, 1);
+  font-weight: 800;
+}

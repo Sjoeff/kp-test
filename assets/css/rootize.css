@@ -1,0 +1,46 @@
+/* Sanitize.css */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+  list-style-type: none;
+  scroll-behavior: smooth;
+}
+
+/* :root */
+
+:root {
+  /* ? colours */
+  --black: rgba(1, 1, 1);
+  --white: rgba(255, 255, 255);
+  --grey-12: rgba(32, 32, 32);
+  --grey-25: rgba(64, 64, 64);
+  --grey-50: rgba(128, 128, 128);
+  --grey-75: rgba(192, 192, 192);
+  --c1: rgb(184, 141, 99);
+  --c2: rgb(239, 194, 139);
+  --c3: rgb(85, 61, 12);
+  --c4: rgba(189, 121, 108, 0.5);
+  --c5: rgb(247, 230, 211);
+  --c6: rgb(255, 128, 0);
+  --c7: rgb(240, 230, 218);
+  --c8: rgb(247, 240, 232);
+
+  /* ? Fonts */
+  --font-1: "Comfortaa", cursive;
+  --font-2: "Gudea", sans-serif;
+  --font-3: "Oswald", sans-serif;
+  --font-4: "Open Sans", sans-serif;
+  --font-5: "Roboto", sans-serif;
+  --font-6: "Playfair Display", serif;
+  --font-7: "Montserrat", sans-serif;
+}
