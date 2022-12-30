@@ -81,7 +81,7 @@ header {
 }
 
 .header--logo {
-  background-image: url("/kp_0.2/assets/images/kp_logo2.png");
+  background-image: url("../images/kp_logo2.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -137,7 +137,7 @@ svg {
   height: 50vh;
   position: relative;
   isolation: isolate;
-  background-image: url("/kp_0.2/assets/images/test.png");
+  background-image: url("../images/test.png"); 
   background-repeat: no-repeat;
   background-position: center;
   width: 100%;
@@ -353,7 +353,7 @@ svg {
 }
 
 .section-4 {
-  background-image: url("/kp_0.2/assets/images/bg/bg-2.jpg");
+  background-image: url("../images/bg/bg-2.jpg");
   justify-content: space-evenly;
   flex-direction: column;
   background-size: cover;
