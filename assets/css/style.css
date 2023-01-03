@@ -61,6 +61,7 @@ form button {
   border-radius: 5px;
   border: 2px solid black;
   transition: all 0.8s ease;
+  cursor: pointer;
 }
 
 form button:hover {
@@ -137,11 +138,10 @@ svg {
   height: 50vh;
   position: relative;
   isolation: isolate;
-  background-image: url("../images/test.png"); 
+  background-image: url("../images/test.png");
   background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  margin-bottom: 2em;
+  background-position: center center;
+  background-size: cover;
 }
 
 /* ? bg - set opacity */
@@ -157,14 +157,15 @@ svg {
 .landing h1 {
   font-family: var(--font-7);
   font-size: clamp(2.5rem, 5vw, 5rem);
-  color: var(--c2);
+  color: var(--c5);
   letter-spacing: 6px;
   font-weight: 500;
+  text-shadow: 0px 0px 6px rgba(1, 1, 1, 0.5);
 }
 
 .landing p {
   font-family: var(--font-7);
-  font-size: clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1.2rem, 3vw, 2.5rem);
   text-shadow: 2px 2px 4px rgba(237, 208, 178, 0.076);
   color: var(--c2);
   line-height: 1.5;
@@ -188,6 +189,7 @@ svg {
   border-radius: 5px;
   border: 2px solid black;
   transition: all 0.8s ease;
+  cursor: pointer;
 }
 
 .landing button:hover {
@@ -204,7 +206,6 @@ svg {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 2em;
   background: var(--c8);
 }
 /*
@@ -233,10 +234,11 @@ svg {
   font-family: var(--font-7);
   font-size: clamp(1rem, 2vw, 1.5rem);
   color: var(--grey-25);
-  max-width: 50%;
+  max-width: 37.5em;
   line-height: 1.4;
   letter-spacing: 0.2px;
   word-spacing: 2px;
+  padding: 1.5em;
 }
 
 .section-3 {
@@ -244,7 +246,6 @@ svg {
   height: 100%;
   flex-direction: column;
   background: var(--c7);
-  padding: 2em;
   padding-bottom: 3em;
 }
 
@@ -255,6 +256,7 @@ svg {
   align-items: center;
   max-width: 100%;
   height: 40vh;
+  padding: 0 1.5em;
 }
 
 .section-3 h2 {
@@ -271,7 +273,7 @@ svg {
 .section3-txt-wrapper p {
   font-family: var(--font-7);
   font-size: clamp(1rem, 2vw, 1.5rem);
-  max-width: 50%;
+  max-width: 37.5em;
   line-height: 1.4;
   letter-spacing: 0.2px;
   word-spacing: 2px;
@@ -287,8 +289,6 @@ svg {
 
 .gal-wrapper p {
   font-family: var(--font-7);
-  font-size: clamp(1rem, 1vw, 1.5rem);
-  max-width: 75%;
   line-height: 1.4;
   letter-spacing: 0.2px;
   word-spacing: 2px;
@@ -298,13 +298,20 @@ svg {
 .imgs {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
+  max-width: 80%;
   height: 100%;
   gap: 3em;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 3em 0;
   border-radius: 15px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .imgs {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .imgs-title {
@@ -314,11 +321,11 @@ svg {
 }
 
 .imgs-title h4 {
-  background: rgba(1, 1, 1, 0.2);
+  background: rgba(1, 1, 1, 0.1);
   font-family: var(--font-7);
-  font-size: clamp(1rem, 2vw, 1.5rem);
-  width: 25vw;
-  padding: 1em;
+  font-size: clamp(1.5rem, 2vw, 3rem);
+  width: 50vw;
+  padding: 0.5em;
   margin: 0 auto;
   border-radius: 5px;
   text-align: center;
@@ -330,25 +337,19 @@ svg {
   justify-content: center;
 }
 
-.imgs-text-wrapper h4 {
-  display: block;
-  background: rgba(1, 1, 1, 0.2);
-  padding: 1em;
-  margin: 1.5em;
-  border-radius: 5px;
-}
-
 .imgs-text-wrapper p {
-  background: rgba(1, 1, 1, 0.2);
-  padding: 1em;
-  margin: 1.5em;
+  background: rgba(1, 1, 1, 0.15);
+  padding: 0.75em;
+  margin: 1.5em 0.5em;
   border-radius: 5px;
+  max-width: 45em;
+  text-align: left;
 }
 
 .section-3 img {
   display: block;
   height: auto;
-  max-width: clamp(20em, 50vw, 33em);
+  max-width: clamp(15em, 50vw, 33em);
   border-radius: 7px;
 }
 
